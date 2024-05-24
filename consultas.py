@@ -17,7 +17,7 @@ class consulta(conexion):
             
         if nit == 0 or nit == "":
             nit = None
-        
+             
         if nit and not mes and not anio:
         # Consultar basada solo en el NIT
             cur.execute(f"SELECT nombre, descripcion FROM empresas WHERE nit = {nit}")
